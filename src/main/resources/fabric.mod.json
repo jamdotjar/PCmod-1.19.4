@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "pcmod",
+	"version": "${version}",
+	"name": "PCmod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"jamdotjar"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/pcmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"com.jamdotjar.pcmod.PcModClient"
+		],
+		"main": [
+          "com.jamdotjar.pcmod.PcMod"
+		],
+		"fabric-datagen": [
+			"com.jamdotjar.pcmod.PcModDataGenerator"
+		]
+	},
+	"mixins": [
+		"pcmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -19,9 +19,9 @@ public class ModItems {
             new Item(new FabricItemSettings()));
     public static final Item RAM = RegisterItem("ram",
             new Item(new FabricItemSettings()));
-
-    public static final Item SSD_NVME = RegisterItem("ssd_nvme",
+    public static final Item SSD_SATA = RegisterItem("ssd_sata",
             new Item(new FabricItemSettings()));
+
 
 
     private static Item RegisterItem(String name, Item item) {
@@ -31,7 +31,7 @@ public class ModItems {
         addToItemGroup(ItemGroups.INGREDIENTS, GPU);
         addToItemGroup(ItemGroups.INGREDIENTS, CPU);
         addToItemGroup(ItemGroups.INGREDIENTS, RAM);
-        addToItemGroup(ItemGroups.INGREDIENTS, SSD_NVME);
+        addToItemGroup(ItemGroups.INGREDIENTS, SSD_SATA);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item){
